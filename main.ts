@@ -107,12 +107,12 @@ namespace piano_keypad {
      * @param index
      */
     
-    //% blockId="RGB_Program" block="RGB_ON"
+    //% blockId="RGB_Program999" block="RGB_ON999999"
     //% weight=99
     //% blockGap=10
     //% color="#17ecc1"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
-    export function RGB_Program(): neopixel.Strip {
+    export function RGB_Program999(): neopixel.Strip {
          
         if (!Strip) {
             Strip = neopixel.create(DigitalPin.P1, 3, NeoPixelMode.RGB);
@@ -127,8 +127,8 @@ namespace piano_keypad {
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=12
     export function RGB_Program_Close(): void {
         pins.digitalWritePin(DigitalPin.P1, 0);
-        piano_keypad.RGB_Program().clear();
-        piano_keypad.RGB_Program().show();
+        piano_keypad.RGB_Program999().clear();
+        piano_keypad.RGB_Program999().show();
     }
     
     //% blockId="Musicbeat" block="Musicbeat|%index"
