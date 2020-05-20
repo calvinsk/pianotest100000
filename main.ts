@@ -7,7 +7,7 @@ load dependency
 */
 
 //% color="##2131CB" weight=20 icon="\uf001"
-namespace piano_keypad {
+namespace piano_ekit {
 
   
     let Strip: neopixel.Strip;
