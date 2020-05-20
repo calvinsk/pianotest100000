@@ -1,6 +1,6 @@
 
 //% color="#2131CB" weight=20 icon="\uf001"
-namespace Ekit_piano {
+namespace Ekits_piano {
 
   
     let Strip: neopixel.Strip;
@@ -104,8 +104,8 @@ namespace Ekit_piano {
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=12
     export function turn_off_RGB(): void {
         pins.digitalWritePin(DigitalPin.P1, 0);
-        Ekit_piano.turn_on_RGB().clear();
-        Ekit_piano.turn_on_RGB().show();
+        Ekits_piano.turn_on_RGB().clear();
+        Ekits_piano.turn_on_RGB().show();
     }
     
   
