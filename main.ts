@@ -6,8 +6,8 @@ load dependency
 "piano": "file:../pxt-piano"  
 */
 
-//% color="##2131CB" weight=20 icon="\uf001"
-namespace piano_ekit {
+//% color="#2131CB" weight=20 icon="\uf001"
+namespace Ekit_piano {
 
   
     let Strip: neopixel.Strip;
@@ -102,15 +102,12 @@ namespace piano_ekit {
          
         
    
-    /**
-     * *****************************************************************
-     * @param index
-     */
+    
     
     //% blockId="RGB_Program999" block="RGB_ON999999"
     //% weight=99
     //% blockGap=10
-    //% color="#17ecc1"
+    //% color="#2131CB"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function RGB_Program999(): neopixel.Strip {
          
@@ -123,18 +120,18 @@ namespace piano_ekit {
     //% blockId="RGB_Program_Close" block="RGB_Program_Close"
     //% weight=98
     //% blockGap=10
-    //% color="#17ecc1"
+    //% color="#2131CB"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=12
     export function RGB_Program_Close(): void {
         pins.digitalWritePin(DigitalPin.P1, 0);
-        piano_ekit.RGB_Program999().clear();
-        piano_ekit.RGB_Program999().show();
+        Ekit_piano.RGB_Program999().clear();
+        Ekit_piano.RGB_Program999().show();
     }
     
     //% blockId="Musicbeat" block="Musicbeat|%index"
     //% weight=98
     //% blockGap=10
-    //% color="#17ecc1"
+    //% color="#2131CB"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function Musicbeat(index: musictone): void {
         switch (index) {
@@ -164,7 +161,7 @@ namespace piano_ekit {
     //% blockId="Touch" block="Music Touch return"
     //% weight=97
     //% blockGap=10
-    //% color="#17ecc1"
+    //% color="#2131CB"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=6
     export function Touch(): number {
         let a = 0;
@@ -180,7 +177,7 @@ namespace piano_ekit {
     //% blockId="TouchButton" block="Music Button|%value"
     //% weight=96
     //% blockGap=10
-    //% color="#17ecc1"
+    //% color="#2131CB"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=6
     export function TouchButton(value: note): number {
        
@@ -191,7 +188,7 @@ namespace piano_ekit {
     //% blockId="PlayPiano" block="Play Piano|tone %value"
     //% weight=95
     //% blockGap=10
-    //% color="#17ecc1"
+    //% color="#2131CB"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=6
     export function PlayPiano(value: number): void {
         let a = 0;
