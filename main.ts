@@ -107,7 +107,7 @@ namespace piano_keypad {
      * @param index
      */
     
-    //% blockId="RGB_Program" block="RGB_Program"
+    //% blockId="RGB_Program" block="RGB_ON"
     //% weight=99
     //% blockGap=10
     //% color="#17ecc1"
