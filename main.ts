@@ -127,8 +127,8 @@ namespace piano_ekit {
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=12
     export function RGB_Program_Close(): void {
         pins.digitalWritePin(DigitalPin.P1, 0);
-        piano_keypad.RGB_Program999().clear();
-        piano_keypad.RGB_Program999().show();
+        piano_ekit.RGB_Program999().clear();
+        piano_ekit.RGB_Program999().show();
     }
     
     //% blockId="Musicbeat" block="Musicbeat|%index"
