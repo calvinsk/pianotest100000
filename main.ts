@@ -1,5 +1,5 @@
 
-//% color="#2131CB" weight=20 icon="\uf8d4"
+//% color="#2131CB" weight=20 icon="\uf001"
 namespace Ekits_piano {
 
   
