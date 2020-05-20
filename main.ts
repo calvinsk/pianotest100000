@@ -85,15 +85,13 @@ namespace Ekit_piano {
   
   
     
-     
-   
     
-    //% blockId="RGB_Program999" block="RGB_ON999999"
+    //% blockId="turn_on_RGB" block="Turn On RGB Light"
     //% weight=99
     //% blockGap=10
     //% color="#2131CB"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
-    export function RGB_Program999(): neopixel.Strip {
+    export function turn_on_RGB(): neopixel.Strip {
          
         if (!Strip) {
             Strip = neopixel.create(DigitalPin.P1, 3, NeoPixelMode.RGB);
@@ -104,24 +102,27 @@ namespace Ekit_piano {
   
   
   
-    //% blockId="RGB_Program_Close" block="RGB_Program_Close"
+    //% blockId="turn_off_RGB" block="Turn Off RGB Light"
     //% weight=98
     //% blockGap=10
     //% color="#2131CB"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=12
-    export function RGB_Program_Close(): void {
+    export function turn_off_RGB(): void {
         pins.digitalWritePin(DigitalPin.P1, 0);
-        Ekit_piano.RGB_Program999().clear();
-        Ekit_piano.RGB_Program999().show();
+        Ekit_piano.turn_on_RGB().clear();
+        Ekit_piano.turn_on_RGB().show();
     }
     
-    //% blockId="Musicbeat" block="Musicbeat|%index"
+  
+  
+    //% blockId="Musicmelody" block="Music Melody|%index"
     //% weight=98
     //% blockGap=10
     //% color="#2131CB"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
-    export function Musicbeat(index: musictone): void {
+    export function Musicmelody(index: musictone): void {
         switch (index) {
+            
             case musictone.dadadum: music.beginMelody(music.builtInMelody(Melodies.Dadadadum), MelodyOptions.Once); break;
             case musictone.birthday: music.beginMelody(music.builtInMelody(Melodies.Birthday), MelodyOptions.Once); break;
             case musictone.entertainer: music.beginMelody(music.builtInMelody(Melodies.Entertainer), MelodyOptions.Once); break;
@@ -161,7 +162,7 @@ namespace Ekit_piano {
         return c;
     }
     
-    //% blockId="TouchButton" block="Music Button|%value"
+    //% blockId="TouchButton" block="Music Note And pitch|%value"
     //% weight=96
     //% blockGap=10
     //% color="#2131CB"
