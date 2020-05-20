@@ -73,24 +73,6 @@ namespace Ekit_piano {
        
     }
     
-    export enum colour {
-        //% blockId="OFF" block="OFF"
-        OFF = 0,
-        //% blockId="RED" block="RED"
-        RED,
-        //% blockId="GREEN" block="GREEN"
-        GREEN,
-        //% blockId="BLUE" block="BLUE"
-        BLUE,
-        //% blockId="WHITE" block="WHITE"
-        WHITE,
-        //% blockId="CYAN" block="CYAN"
-        CYAN,
-        //% blockId="PINKISH" block="PINKISH"
-        PINKISH,
-        //% blockId="YELLOW" block="YELLOW"
-        YELLOW
-    }
     
 
     function i2cwrite(addr: number, reg: number, value: number) { 
@@ -99,10 +81,12 @@ namespace Ekit_piano {
         buf[1] = value; 
         pins.i2cWriteBuffer(addr, buf); 
     }  
-         
-        
-   
+     
+  
+  
     
+     
+   
     
     //% blockId="RGB_Program999" block="RGB_ON999999"
     //% weight=99
@@ -117,6 +101,9 @@ namespace Ekit_piano {
         return Strip;  
     }  
        
+  
+  
+  
     //% blockId="RGB_Program_Close" block="RGB_Program_Close"
     //% weight=98
     //% blockGap=10
