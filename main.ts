@@ -64,11 +64,13 @@ namespace Ekit_piano {
         AB = 0x1000,
         //% blockId="B" block="B"
         B = 0x2000, 
-        //% blockId="L" block="L"
+      
+      
+        //% blockId="Low pitch" block="Low pitch"
         L = 0x0002,
-        //% blockId="M" block="M"
+        //% blockId="Medium Pitch" block="Medium pitch"
         M = 0x0001,
-        //% blockId="H" block="H"
+        //% blockId="High Pitch" block="High Pitch"
         H = 0x4000,
        
     }
