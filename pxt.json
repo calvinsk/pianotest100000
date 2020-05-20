@@ -1,7 +1,7 @@
 {
-    "name": "piano",
-    "version": "2.0.0",
-    "description": "2222222222222222222222222222222222",
+    "name": "Ekits Piano Extension Board",
+    "version": "1.0.0",
+    "description": "Ekits Piano Extension",
     "license": "MIT",
     "dependencies": {
         "core": "*",
