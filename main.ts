@@ -7,7 +7,7 @@ load dependency
 */
 
 //% color="##2131CB" weight=20 icon="\uf001"
-namespace Ekit_piano {
+namespace piano {
 
   
     let Strip: neopixel.Strip;
