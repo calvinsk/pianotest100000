@@ -107,7 +107,7 @@ namespace piano_keypad {
      * @param index
      */
     
-    //% blockId=piano_RGB_Program block="RGB_Program"
+    //% blockId="RGB_Program" block="RGB_Program"
     //% weight=99
     //% blockGap=10
     //% color="#17ecc1"
@@ -120,7 +120,7 @@ namespace piano_keypad {
         return Strip;  
     }  
        
-    //% blockId=piano_RGB_Program_Close block="RGB_Program_Close"
+    //% blockId="RGB_Program_Close" block="RGB_Program_Close"
     //% weight=98
     //% blockGap=10
     //% color="#17ecc1"
@@ -131,7 +131,7 @@ namespace piano_keypad {
         piano_keypad.RGB_Program().show();
     }
     
-    //% blockId=piano_Musicbeat block="Musicbeat|%index"
+    //% blockId="Musicbeat" block="Musicbeat|%index"
     //% weight=98
     //% blockGap=10
     //% color="#17ecc1"
@@ -161,7 +161,7 @@ namespace piano_keypad {
         }
     }
     
-    //% blockId=piano_Touch block="Music Touch return"
+    //% blockId="Touch" block="Music Touch return"
     //% weight=97
     //% blockGap=10
     //% color="#17ecc1"
@@ -177,7 +177,7 @@ namespace piano_keypad {
         return c;
     }
     
-    //% blockId=piano_TouchButton block="Music Button|%value"
+    //% blockId="TouchButton" block="Music Button|%value"
     //% weight=96
     //% blockGap=10
     //% color="#17ecc1"
@@ -188,7 +188,7 @@ namespace piano_keypad {
         return c;
     }
 
-    //% blockId=piano_PlayPiano block="Play Piano|tone %value"
+    //% blockId="PlayPiano" block="Play Piano|tone %value"
     //% weight=95
     //% blockGap=10
     //% color="#17ecc1"
